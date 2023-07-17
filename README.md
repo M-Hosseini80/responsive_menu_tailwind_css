@@ -10,3 +10,8 @@ With Responsive Menu Tailwind CSS, you can easily incorporate a sleek and modern
 
 ### MOBILE -RESPONSIVE
 ![](https://github.com/M-Hosseini80/responsive_menu_tailwind_css/blob/main/mobile-screenshot.png)
+
+
+# Getting Started
+1. Download/Clone project
+2. run **index.html **in your browser
