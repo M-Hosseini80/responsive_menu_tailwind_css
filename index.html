@@ -11,9 +11,64 @@
     </head>
 
     <body>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <!-- Responsive Menu Clickable Background -->
+        <div class="menuToggle bg-black/50 fixed inset-0 z-10 hidden lg:hidden " onclick="toggleMenu()"></div>
+
+        <!-- Main Navigation Area -->
+        <div class="bg-white shadow z-20 relative">
+            <!-- Navbar -->
+            <div
+                class=" max-w-7xl mx-auto p-5 text-gray-700 text-lg flex items-center gap-8 justify-between lg:justify-start h-24">
+                <a href="/">
+                    <img src="./Logo.png" class="w-48 hover:border-b border-black" alt="Logo">
+                </a>
+
+                <!-- Responsive Open Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="menuToggle w-6 h-6 lg:hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                </svg>
+
+
+                <!-- Responsive Close Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="menuToggle w-6 h-6 hidden lg:hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+
+                <!-- Menu Items -->
+                <ul id="menu"
+                    class="hidden flex lg:flex gap-4 lg:gap-4 shadow-lg p-5 lg:shadow-none lg:p-0 flex-col lg:flex-row absolute inset-x-0 bg-white top-16 border m-5 rounded-xl lg:m-0  lg:static lg:border-none  ">
+                    <!-- Menu Item -->
+                    <li>
+                        <a class="hover:text-black hover:underline" href="#">Main page</a>
+                    </li>
+                    <!-- Menu Item -->
+                    <li>
+                        <a class="hover:text-black hover:underline" href="#">Products</a>
+                    </li>
+                    <!-- Menu Item -->
+                    <li>
+                        <a class="hover:text-black hover:underline" href="#">Contact Us</a>
+                    </li>
+                    <!-- Menu Item -->
+                    <li>
+                        <a class="hover:text-black hover:underline" href="#">About US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            // Toggle Menu Onclick
+            function toggleMenu() {
+                document.getElementById('menu').classList.toggle('hidden')
+                document.querySelectorAll('.menuToggle').forEach(element => {
+                    element.classList.toggle('hidden')
+                });
+            }
+        </script>
     </body>
 
 </html>
