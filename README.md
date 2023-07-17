@@ -1,4 +1,4 @@
-##Responsive TailwindCSS Menu Without any JS Scripts
+# Responsive TailwindCSS Menu Without any JS Scripts
 
 Responsive Menu #Tailwind CSS is a comprehensive and customizable menu component built using the popular CSS framework, Tailwind CSS. This repository provides developers with a ready-to-use solution for creating responsive menus that seamlessly adapt to different screen sizes and devices.
 
