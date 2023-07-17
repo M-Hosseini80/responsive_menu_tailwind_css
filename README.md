@@ -14,4 +14,4 @@ With Responsive Menu Tailwind CSS, you can easily incorporate a sleek and modern
 
 # Getting Started
 1. Download/Clone project
-2. run **index.html **in your browser
+2. run **index.html ** in your browser
